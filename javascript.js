@@ -49,7 +49,7 @@ const computerSelection = getComputerChoice();
 let playerScore = 0;
 let computerScore = 0;
 
-const = document.querySelector('body');
+const body = document.querySelector('body');
 
 const rock = document.createElement('button');
 rock.textContent = "Rock";
