@@ -28,7 +28,7 @@ function playRound(playerSelection, computerSelection) {
             }
 }
 
-/*function game() {
+function game() {
     console.log("Welcome to the game of your life!")
     for (let i = 0; i < 5; i++) {
         const playerSelection = getPlayerChoice();
@@ -42,26 +42,6 @@ function playRound(playerSelection, computerSelection) {
     } else {
         console.log("No one won!")
     }
-}*/
-
-const playerSelection = getPlayerChoice();
-const computerSelection = getComputerChoice();
-let playerScore = 0;
-let computerScore = 0;
-
-const body = document.querySelector('body');
-
-const rock = document.createElement('button');
-rock.textContent = "Rock";
-body.appendChild(rock);
-
-const paper = document.createElement('button');
-paper.textContent = "Paper";
-body.appendChild(paper);
-
-const scissors = document.createElement('button');
-scissors.textContent = "Scissors";
-body.appendChild(scissors);
-
+}
 
 game();
