@@ -4,14 +4,9 @@ function getPlayerChoice() {
 }
 
 function getComputerChoice() {
-    let choice = Math.random();
-    if(choice <= 0.33) {
-        return "rock"
-    } else if(choice >= 0.66) {
-        return "paper"
-    } else {
-        return "scissors"
-    }
+    const options = ["rock", "paper", "scissors"];
+    let choice = options[Math.floor(Math.random() * options.length)];
+    return choice;
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -43,5 +38,10 @@ function game() {
         console.log("No one won!")
     }
 }
+
+const playerSelection = getPlayerChoice();
+const computerSelection = getComputerChoice();
+let playerScore = 0;
+let computerScore = 0;
 
 game();
